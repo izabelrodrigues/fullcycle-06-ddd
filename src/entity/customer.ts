@@ -8,6 +8,7 @@ class Customer {
     constructor(id: string, name: string) {
         this._id = id;
         this._name = name;
+        this.validate();
     }
 
     validate() {
@@ -18,6 +19,7 @@ class Customer {
 
     changeName(name: string) {
         this._name = name;
+        this.validate();
     }
 
     activate() {
