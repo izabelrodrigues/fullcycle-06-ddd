@@ -60,6 +60,7 @@ export default class CustomerRepository implements CustomerRepositoryInterface {
         customer.address = address;
         return customer;
     }
+    
     async findAll(): Promise<customer[]> {
         const customerModels = await CustomerModel.findAll();
 
